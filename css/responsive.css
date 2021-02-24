@@ -1,0 +1,33 @@
+@media screen and (max-width: 1220px){ 
+    .header-content, .container-fooder footer {
+        max-width: 1000px;
+        padding: 0 20px;
+    } 
+}
+@media screen and (max-width: 1000px){ 
+    .header-content, .container-fooder footer {
+        max-width: 800px;
+        padding: 0 60px;
+    } 
+    form{
+        width: 80%;
+        margin-left: 70px;
+    }
+    .barra{
+        width: -120%;
+        left: -280px;
+    }
+}
+@media screen and (max-width: 600px){ 
+    .header-content, .container-fooder footer {
+        max-width: 400px;
+        padding: 0 20px;
+    } 
+    form{
+        width: 70%;
+    }
+    .barra{
+        width: 50%;
+        left: -80px;
+    }
+}
