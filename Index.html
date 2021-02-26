@@ -1,131 +1,366 @@
 <!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+        <title>Web Store </title>
+ 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="#">
+        <script src="https://kit.fontawesome.com/61f7849f71.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-baz@1.0.11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js "></script>
+        <link rel="shortcut icon" type="image/x-icon" href="biblioteca/Aidesign.ico">
 
-        <html lang="en">
-            <head>
-                <meta charset="utf-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <title>About Our</title>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-                <link rel="stylesheet" href="aboutcss/contenedor.css">
-                <link rel="stylesheet" href="aboutcss/about.css">
-            </head>
-            
-            <body>
-                <div class="container">
+
+        <link rel="stylesheet" href="css/Principal.css">
+        <link rel="stylesheet" href="css/foolder.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/portada.css">
+
+        <link rel="stylesheet" href="scss/estilos.css">
+        <link rel="stylesheet" href="css2/Menu.css">
+        <link rel="stylesheet" href="css2/SplashScreen.css">
+        <link rel="stylesheet" href="css2/smartArt.css">
+        <link rel="stylesheet" href="css2/scrroll.css">
+        <link rel="stylesheet" href="css2/search.css">
+
+    </head>
+    <body>
+<!-------------------------------------->
+<!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+            <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                xfbml            : true,
+                version          : 'v10.0'
+                });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <!-- Your Chat Plugin code -->
+            <div class="fb-customerchat"
+            attribution="setup_tool"
+            page_id="102169321929752"
+            theme_color="#20cef5"
+            logged_in_greeting="Hola, Cómo puedo ayudarte? "
+            logged_out_greeting="Hola, Cómo puedo ayudarte? ">
+            </div>
+<!-------------------------------------->
+        <header>
+                <nav>
+                    <div class="logo">
+                        <h2>Web<b>Store</b></h2>
+                    </div>
+                    <div class="search-box">
+                        <input class="search-txt" type="text" id="formulario" name=" " placeholder="Search">
+                        <a class="search-btn" href="#">
+                            <i id="boton" class="fas fa-search"></i>
+                        </a>
+                    </div>
+                               
                     <div id="burger-menu">
                         <span></span>
                     </div>
                     <div id="menu">
                         <ul>
-                            <li><a href="Home.html">Home</a></li>
-                            <li><a href="#">About Our</a></li>
-                            <li><a href="index.html">Welcome MatePro</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="About.html">About Our</a></li>
+                            <li><a href="SmarthPhone.html">SmartPhone</a></li>
                         </ul>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>01</h2>
-                            <h3>
-                                My name is Anthony Estuardo Cordova Moreno.
-                            </h3>
-                            <p>
-                                I study Information Systems at the University of Guayaquil</p>
-                          
-                        </div>
-        
+                    <div class="enlaces">
+                        <button class="switch" id="switch">
+                            <span><i class="fas fa-sun"></i></span>
+                            <span><i class="fas fa-moon"></i></span>
+                        </button>
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>02</h2>
-                            <h3>
-                                My name is Cristian Alexander Calderon Moreno.
-                            </h3>
-                            <span id="#hola">
-                                <p>
-                                    I have a degree in telecommunications and I work in network connections, 
-                                    sale of software, repair and formatting of devices and 
-                                    computers that contain malware
-                                </p>
-                            </span>
-                        </div>
+                </nav>
+                
+ 
+           
+            
+        </header>
+
+<!-------------------------------------------PORTADA------------------------------>
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="container-info-cover">
+                <h3>
+                    Welcome to WebStore
+                </h3>
+                <p>
+                    Providing a technological service is the way to improve and optimize our products to the maximum.
+                </p>
+            </div>
+        </div>
+
+    </div>  
+<!----------------------------------------------------------------------------------------------------------->
+    <div class="container-all">
+        <div class="container-post">
+            <input type="radio" id="Todo" name="categories" value="Todo" checked="">
+            <input type="radio" id="Smartphone" name="categories" value="Smartphone">
+            <input type="radio" id="Auriculares" name="categories" value="Auriculares">
+            <input type="radio" id="Audifonos" name="categories" value="Audifonos">
+            
+            <div class="container-categoria"> 
+                <label for="Todo">Todo</label>
+                <label for="Smartphone">Smartphone</label>
+                <label for="Auriculares">Auriculares</label>
+                <label for="Audifonos">Audifonos</label>
+                
+            </div>
+           
+            <div class="posts">
+                <div class="post" data-categori="Todo">
+                    <div class="ctn">
+                        <img class="lord" src="images/mi_10t_pro.png" alt="">
                     </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>03</h2>
-                            <h3>
-                                My name is Danny Javier Moreno Solano.
-                            </h3>
-                            <p>
-                                I am an architect and I work in creating architectural designs, 
-                                remodeling, improvement of facades.
-                            </p>
-                      
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>04</h2>
-                            <h3>
-                                My name is Robert Calderon Moreno.
-                            </h3>
-                            <p>
-                                I am a mechanical engineer and I am dedicated to the repair of electrical systems using software, 
-                                I also delicately clean the parts with liquids and an ultra-sound machine
-                            </p>
-                      
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>04</h2>
-                            <h3>
-                                My name is Bryan Calderon Moreno.
-                            </h3>
-                            <p>
-                                I am a mechanical engineer and I am dedicated to the repair of electrical systems using software, 
-                                I also delicately clean the parts with liquids and an ultra-sound machine
-                            </p>
-                      
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <h2>04</h2>
-                            <h3>
-                                My name is Maycol Calderon Moreno.
-                            </h3>
-                            <p>
-                                I am a mechanical engineer and I am dedicated to the repair of electrical systems using software, 
-                                I also delicately clean the parts with liquids and an ultra-sound machine
-                            </p>
-                      
-                        </div>
-                    </div>
+                    
+                    <h4>
+                        Mi 10T pro.
+                    </h4>
+                    <span>
+                        24 de Febrero del 2021 
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Design
+                        </li>
+
+                    </ul>
+      
                 </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/poco_x_3.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Poco X3
+                    </h4>
+                    <span>
+                        24 de Febrero del 2021 
+                    </span>
+                    <ul class="ctn-tag">
+                        <li>
+                            Diseño
+                        </li> 
+                    </ul> 
+                    <span>
+                        Más information?
+                        Click en la burbuja de messsenger!!
+                    </span>
+                     
+                            <p>
+                                
+                            </p>
+                            <span>
+    
+                            </span>
+                           
+                    <a href="#">
+                    <button>
+                        Show More
+                    </button></a>
+                     
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/realmi_6_pro.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/realmi_7_pro.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/redmi_note_8.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/redmi_note_9_s.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/realmi_note_9_pro.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+                <div class="post" data-categori="Smartphone">
+                    <div class="ctn">
+                        <img class="lord" src="images/realmi_6_pro.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Este diseño esta creado con medidas exactas 
+                        y un Auriculares elegante.
+                    </h4>
+                    <span>
+                        04 de Enero del 2021 - 15:12
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Audifonos
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    }</button></a>
+                </div>
+<!-------------------------------------Auriculare------------------------->
+                <div class="post" data-categori="Auriculares">
+                    <div class="ctn">
+                        <img class="lord" src="images/redmagic_TWC.png" alt="">
+                    </div>
+                    
+                    <h4>
+                        Redmagi TWC
+                    </h4>
+                    <span>
+                        24 de Febrero del 2021 
+                    </span>
+                    <ul class="ctn-tag"> 
+                        <li>
+                            Auriculares
+                        </li> 
+                    </ul>
+                    <a href="#">
+                        <button>
+                            Show More
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </div>  
+<!------------------------------------Boton de ir hacia arriba----------------------------------->
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
 <!------------------------------------------------Pie de Pagina------------------------------------------------------>
 
-                <div class="container-fooder">
-                    <footer>
-                        <div class="redes-fooder">
-                            <a href="https://www.facebook.com/WebStore-102169321929752"><i class="fab fa-facebook-f icon-redes-fooder" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com"><i class="fab fa-instagram icon-redes-fooder" aria-hidden="true"></i></a>
+            <div class="container-fooder">
+                <footer>
+                    <div class="redes-fooder">
+                        <a href="https://www.facebook.com/WebStore-102169321929752"><i class="fab fa-facebook-f icon-redes-fooder" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram icon-redes-fooder" aria-hidden="true"></i></a>
+                    
+                        <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp icon-redes-fooder" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com"><i class="fab fa-google-plus-g icon-redes-fooder" aria-hidden="true"></i></a>
                         
-                            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp icon-redes-fooder" aria-hidden="true"></i></a>
-                            <a href="https://www.google.com"><i class="fab fa-google-plus-g icon-redes-fooder" aria-hidden="true"></i></a>
-                            
-                        </div>
-                        <hr>
-                        <h4>
-                            @ 2020 WebStore - Todos los Derechos Reservados
-                        </h4>
+                    </div>
+                    <hr>
+                    <h4>
+                        @ 2020 WebStore - Todos los Derechos Reservados
+                    </h4>
+            
+                </footer>
+            </div>
 
-                    </footer>
-                </div>
-                <script src="js/desplegable.js">
-                </script>
-            </body>
-        </html>
+        <script src="js/mododark.js" async defer></script>
+        <script src="js/Main.js" ></script>
+        <script src="js/scroll.js" ></script>
+    </body>
+</html>
