@@ -1,0 +1,805 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+        <title>CCM SMART TECHNOLOGY</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/logo_ccm.png">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="#">
+
+       <script src="https://kit.fontawesome.com/61f7849f71.js" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-baz@1.0.11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js "></script>
+        <link rel="shortcut icon" type="image/x-icon" href="biblioteca/Aidesign.ico">
+
+
+        <link rel="stylesheet" href="css/Principal.css">
+        <link rel="stylesheet" href="css/foolder.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/portada.css">
+
+        <link rel="stylesheet" href="scss/estilos.css">
+        <link rel="stylesheet" href="css2/Menu.css">
+        <link rel="stylesheet" href="css2/SplashScreen.css">
+        <link rel="stylesheet" href="css2/smartArt.css">
+        <link rel="stylesheet" href="css2/scrroll.css">
+      
+
+        <link rel="stylesheet" href="css3/popup.css">
+    </head>
+    <body>
+<!----------------------------SPLASH SCREEN ----------------------------------------------->
+        <div class="loader-bg">
+            <div class="loader">
+                <section>
+                    
+                </section>
+            </div>
+        </div>
+<!-------------------------------------->
+<!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+                <script>
+                window.fbAsyncInit = function() {
+                    FB.init({
+                    xfbml            : true,
+                    version          : 'v10.0'
+                    });
+                };
+
+                (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+                <!-- Your Chat Plugin code -->
+                <div class="fb-customerchat"
+                attribution="setup_tool"
+                page_id="102169321929752"
+                theme_color="#20cef5"
+                logged_in_greeting="Hola, Cómo puedo ayudarte? "
+                logged_out_greeting="Hola, Cómo puedo ayudarte? ">
+                </div>
+<!-------------------------------------->
+        <header>
+                <nav>
+                    <div class="logo">
+                        <h2>CCM<b> SMART TECHNOLOGY</b></h2>
+                    </div>                      
+                    <div id="burger-menu">
+                        <span></span>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="About.html">About Our</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="enlaces">
+                        <button class="switch" id="switch">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>  
+                </nav>
+                
+        </header>
+
+<!-------------------------------------------PORTADA------------------------------>
+            <div class="container-all" id="move-content">
+                <div class="blog-container-cover">
+                    <div class="container-info-cover">
+                        <h3>
+                            CCM SMART TECHNOLOGY
+                        </h3>
+                        <p>
+                            Providing a technological service is the way to improve and optimize our products to the maximum.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+<!----------------------------------------------------------------------------------------------------------->
+            <div class="container-all">
+                <div class="container-post">
+                    <input type="radio" id="Todo" name="categories" value="Todo" checked="">
+                    <input type="radio" id="Smartphone" name="categories" value="Smartphone">
+                    <input type="radio" id="Auriculares" name="categories" value="Auriculares">
+                    <input type="radio" id="Audifonos" name="categories" value="Audifonos">
+                    <input type="radio" id="SmartWatch" name="categories" value="SmartWatch">
+                    <input type="radio" id="Laptop" name="categories" value="Laptop">
+                    
+                    <div class="container-categoria"> 
+                        <label for="Todo">Todo</label>
+                        <label for="Smartphone">Smartphone</label>
+                        <label for="Auriculares">Auriculares</label>
+                        <label for="SmartWatch">SmartWatch</label>
+                        <label for="Laptop">Laptop</label>
+                        
+                    </div>
+                    <div class="posts" id="blur">
+<!-------------------------------------Smartphone------------------------->
+
+                        <div class="post" data-categori="Smartphone" >
+                            <div class="ctn">
+                                <img class="lord" src="images/mi_10t_pro.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Mi 10T Pro 5G 
+                            </h4>
+                            <span>
+                                Es un smartphone que salio a la Venta el 2020. 
+                                Su tamaño es 165.1 x 76.4 x 9.3 mm y su peso es 218 pulgadas. 
+                                Tiene una pantalla IPS LCD de 6.67".
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+
+                            </ul>
+                            <a onclick="mi_10t_pro_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+<!-------------------------------------Smartphone------------------------->
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/poco_x_3.jpeg" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Poco X3 
+                            </h4>
+                            <span>
+                                Es un smartphone de 2020. 
+                                Su tamaño es 165.3 x 76.8 x 10.1 mm y su peso es 225 pulgadas. 
+                                Tiene ina pantalla IPS LCD de 6.67". 
+                                La resolución es de 1080 x 2400 y una densidad de los píxeles de 395 ppi . 
+                                La cámara frontera singular de 20 MP. La cámara trasera cuádriple de 64 MP. 
+                            </span>
+                            <ul class="ctn-tag">
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul> 
+
+                            <a onclick="poco_x_3_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/realmi_6_pro.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Realmi 6 Pro
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="realmi_6_pro_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/realmi_7_pro.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Realmi 7 Pro
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="realmi_7_pro_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/Mi_10_lite.jpeg" alt="">
+                            </div>
+                            
+                            <h4>
+                                Mi 10 Lite.
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+
+                            </ul>
+                            <a onclick="Mi_10_lite_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+<!-------------------------------------SmartWatch------------------------->
+                        <div class="post" data-categori="SmartWatch">
+                            <div class="ctn">
+                                <img class="lord" src="images/Huawey_Watch_fit.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Huawei Watch fit
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                SmartWatch
+                                </li> 
+                            </ul>
+                            <a onclick="Huawey_Watch_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="post" data-categori="SmartWatch">
+                            <div class="ctn">
+                                <img class="lord" src="images/Amazfit_gts_2.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Amazfit GTS 2
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                SmartWatch
+                                </li> 
+                            </ul>
+                            <a onclick="toggle()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="post" data-categori="SmartWatch">
+                            <div class="ctn">
+                                <img class="lord" src="images/amazfit.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Amazfit Band 5
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                SmartWatch
+                                </li> 
+                            </ul>
+                            <a onclick="Amazfit_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+
+<!-------------------------------------Laptop------------------------->
+                        <div class="post" data-categori="Laptop">
+                            <div class="ctn">
+                                <img class="lord" src="images/" alt="">
+                            </div>
+
+                            <h4>
+                                Laptop
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Laptop
+                                </li>
+
+                            </ul>
+                            <a onclick="toggle()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function toggle(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var Mi_10_lite = document.getElementById('Mi_10_lite');
+                                Mi_10_lite.classList.toggle('active');
+                            }
+                        </script>
+<!-------------------------------------Smartphone------------------------->
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/redmi_note_8.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Redmi Note 8
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="redmi_note_8_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function redmi_note_8_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var redmi_note_8 = document.getElementById('redmi_note_8');
+                                redmi_note_8.classList.toggle('active');
+                            }
+                        </script>
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/redmi_note_9_s.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Redmi Note 9 S
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="redmi_note_9_s_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function redmi_note_9_s_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var redmi_note_9_s = document.getElementById('redmi_note_9_s');
+                                redmi_note_9_s.classList.toggle('active');
+                            }
+                        </script>
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/realmi_note_9_pro.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Realmi Note 9 Pro 
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="realmi_note_9_pro_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function realmi_note_9_pro_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var realmi_note_9_pro = document.getElementById('realmi_note_9_pro');
+                                realmi_note_9_pro.classList.toggle('active');
+                            }
+                        </script>
+                        <div class="post" data-categori="Smartphone">
+                            <div class="ctn">
+                                <img class="lord" src="images/Redmi_9.jpeg" alt="">
+                            </div>
+                            
+                            <h4>
+                                Xiaomi Redmi 9 
+                            </h4>
+                            <span>
+                                04 de Enero del 2021 - 15:12
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Smartphone
+                                </li>
+                            </ul>
+                            <a onclick="Redmi_9_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function Redmi_9_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var Redmi_9 = document.getElementById('Redmi_9');
+                                Redmi_9.classList.toggle('active');
+                            }
+                        </script>
+<!-------------------------------------Auriculare------------------------->
+                        <div class="post" data-categori="Auriculares">
+                            <div class="ctn">
+                                <img class="lord" src="images/redmagic_TWC.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Redmagi TWC
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Auriculares
+                                </li> 
+                            </ul>
+                            <a onclick="redmagic_TWC_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function redmagic_TWC_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var redmagic_TWC = document.getElementById('redmagic_TWC');
+                                redmagic_TWC.classList.toggle('active');
+                            }
+                        </script>
+                        <div class="post" data-categori="Auriculares">
+                            <div class="ctn">
+                                <img class="lord" src="images/Manos libres.jpeg" alt="">
+                            </div>
+                            
+                            <h4>
+                                Touch Control Operation
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Auriculares
+                                </li> 
+                            </ul>
+                            <a onclick="Manos__libres_fuction()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function Manos__libres_fuction(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var Manos__libres = document.getElementById('Manos__libres');
+                                Manos__libres.classList.toggle('active');
+                            }
+                        </script>
+<!-------------------------------------Auriculares------------------------->
+                        <div class="post" data-categori="Auriculares">
+                            <div class="ctn">
+                                <img class="lord" src="images/haylou_gt_5.png" alt="">
+                            </div>
+                            
+                            <h4>
+                                Redmagi TWC
+                            </h4>
+                            <span>
+                                24 de Febrero del 2021 
+                            </span>
+                            <ul class="ctn-tag"> 
+                                <li>
+                                    Auriculares
+                                </li> 
+                            </ul>
+                            <a onclick="toggle()">
+                                <button>
+                                    Show More
+                                </button>
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            function toggle(){
+                                var blur = document.getElementById('blur');
+                                blur.classList.toggle('active');
+                                var redmagic_TWC = document.getElementById('redmagic_TWC');
+                                redmagic_TWC.classList.toggle('active');
+                            }
+                        </script>
+                    </div>
+
+                    <div id="mi_10t_pro">
+                            <h2>Mi 10T pro.</h2>
+                            <br>
+                            <h3>Marca y modelo</h3>	            <h4>Xiaomi Mi 10T Pro 5G</h4>
+                     
+                            <h3>Fecha de lanzamiento</h3>		<h4>2020, Septiembre 30</h4>
+                           
+                            <h3>Dimensiones (AlxAnxProf)</h3>	<h4>165.1 Х 76.4 Х 9.3mm</h4>
+                            
+                            <h3>Peso</h3>				        <h4>218 g</h4>
+                          
+                            <h3>Cuerpo</h3>				        <h4>Panel frontal de vidrio (Gorilla Glass 5), 
+                                                                    panel trasero de vidrio	(Gorilla Glass 5),marco de aluminio</h4>
+                         
+                            <h3>Colores</h3>				    <h4>Cosmic Black, Lunar Silver, Aurora Blue</h4>
+                            <h3>Batería	</h3>			        <h4>5000 mAh, Li-Po, no extraíble</h4>
+                            <h3>Precio indicativo</h3>		    <h4>500 EUR</h4>
+                   
+                        <a onclick="mi_10t_pro_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="poco_x_3">
+                        <h2>Xiaomi Poco X3</h2>
+                        
+                            <h3>Marca y modelo</h3>		        <h4>Xiaomi Poco X3</h4>
+                            <h3>Fecha de lanzamiento</h3>		<h4>2020, Septiembre 22</h4>
+                            <h3>Dimensiones (AlxAnxProf)</h3>	<h4>165.3 Х 76.8 Х 10.1mm</h4>
+                            <h3>Peso</h3>				                <h4>225 g</h4>
+                            <h3>Sistema Operativo (OS)</h3>		    <h4> Android 10, MIUI 12</h4>
+                            <h3>Chipset</h3>		                <h4>Qualcomm SM7150-AC Snapdragon 732G (8 nm)</h4>
+                            <h3>Procesador central (CPU)</h3>	    <h4>octa-core (2x2.3 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)</h4>
+                            <h3>Procesador de gráficos (GPU)</h3>	<h4>Adreno 618</h4>
+                            <h3>Tarjeta de memoria externa</h3>	    <h4>microSDXC (utiliza compartido/a SIM slot)</h4>
+                            <h3>Memoria Interna</h3>			    <h4>64GB 6GB RAM, 128GB 6GB RAM, 128GB 8GB RAM</h4>
+                   
+                        <a onclick="poco_x_3_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="realmi_6_pro">
+                        <h2>realmi 6 pro</h2>
+                        <a onclick="realmi_6_pro_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="realmi_7_pro">
+                        <h2>realmi 7 pro</h2>
+                        <a onclick="realmi_7_pro_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="Mi_10_lite">
+                        <h2>Mi 10 lite</h2>
+                        <a onclick="Mi_10_lite_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="redmi_note_8">
+                        <h2>redmi note 8</h2>
+                        <a onclick="redmi_note_8_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="redmi_note_9_s">
+                        <h2>redmi note 9 s</h2>
+                        <a onclick="redmi_note_9_s_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="realmi_note_9_pro">
+                        <h2>realmi note 9 pro</h2>
+                        <a onclick="realmi_note_9_pro_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="Redmi_9">
+                        <h2>Redmi 9</h2>
+                        <a onclick="Redmi_9_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="Huawey_Watch">
+                        <h2>Huawey Watch</h2>
+                        <a onclick="Huawey_Watch_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="redmagic_TWC">
+                        <h2>Redmagic TWC</h2>
+                        <a onclick="redmagic_TWC_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <div id="Manos__libres">
+                        <h2>Touch Control Operation</h2>
+                        <a onclick="Manos__libres_fuction()">
+                            <button class="show__Less">Show Less</button>
+                        </a>
+                    </div>
+                    <script type="text/javascript">
+                        function mi_10t_pro_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var mi_10t_pro = document.getElementById('mi_10t_pro');
+                            mi_10t_pro.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function poco_x_3_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var poco_x_3 = document.getElementById('poco_x_3');
+                            poco_x_3.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function realmi_6_pro_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var realmi_6_pro = document.getElementById('realmi_6_pro');
+                            realmi_6_pro.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function realmi_7_pro_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var realmi_7_pro = document.getElementById('realmi_7_pro');
+                            realmi_7_pro.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function Mi_10_lite_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var Mi_10_lite = document.getElementById('Mi_10_lite');
+                            Mi_10_lite.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function Huawey_Watch_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var Huawey_Watch = document.getElementById('Huawey_Watch');
+                            Huawey_Watch.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function  Amazfit_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var Amazfit = document.getElementById('Amazfit');
+                            Amazfit.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function toggle(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var amazfit = document.getElementById('amazfit');
+                            amazfit.classList.toggle('active');
+                        }
+                    </script>
+                    <script type="text/javascript">
+                        function Amazfit_gts_2_fuction(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+                            var Amazfit_gts_2 = document.getElementById('Amazfit_gts_2');
+                            Amazfit_gts_2.classList.toggle('active');
+                        }
+                    </script>
+                </div>
+
+            </div>  
+<!------------------------------------------------Pie de Pagina------------------------------------------------------>
+            <nav>
+                <div class="container-fooder">
+                    <footer>
+                        <div class="redes-fooder">
+                            <a href="https://www.facebook.com/WebStore-102169321929752"><i class="fab fa-facebook-f icon-redes-fooder" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram icon-redes-fooder" aria-hidden="true"></i></a>
+                        
+                            <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp icon-redes-fooder" aria-hidden="true"></i></a>
+                            <a href="https://www.google.com"><i class="fab fa-google-plus-g icon-redes-fooder" aria-hidden="true"></i></a>
+                            
+                        </div>
+                        <hr>
+                        <h4>
+                            @ 2020 WebStore - Todos los Derechos Reservados
+                        </h4>
+                
+                    </footer>
+                </div>
+            </nav>
+
+            <script>
+                function bubbles(){
+                    var count = 200;
+                    var section = document.querySelector('section');
+                    var i = 0;
+                    while(i<count){
+                        var bubble = document.createElement('i')
+                        var x = Math.floor(Math.random() * window.innerWidth);
+                        var y = Math.floor(Math.random() * window.innerHeight);
+                        var size = Math.random()*10;
+                        bubble.style.left = x+'px';
+                        bubble.style.top = y+'px';
+                        bubble.style.width = 1+size+'px';
+                        bubble.style.height = 1+size+'px';
+    
+                        bubble.style.animationDuration = 5+size+'s';
+                        bubble.style.animationDelay = -size+'s';
+                        section.appendChild(bubble);
+                        i++
+                    }
+                }
+                bubbles();
+            </script>
+            <script>
+                setTimeout(function(){
+                    $('.loader-bg').fadeToggle();
+    
+                }, 3000);
+            </script>
+        <script src="js/mododark.js" async defer></script>
+        <script src="js/Main.js" ></script>
+        <script src="js/scroll.js" ></script>
+    </body>
+</html>
