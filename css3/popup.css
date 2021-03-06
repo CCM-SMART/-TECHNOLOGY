@@ -1,0 +1,354 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.posts#blur.active{
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
+    background: rgb(0, 0, 0);
+}
+#mi_10t_pro h4{ 
+    margin-left: 50%;
+    margin-top: -5%;
+}
+#mi_10t_pro h2{
+    color: rgba(253, 132, 62, 0.973);
+}
+#mi_10t_pro{
+   
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#mi_10t_pro.active{
+    top: 60%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.show__Less{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: rgba(177, 175, 175, 0.281);
+    color: rgba(253, 132, 62, 0.973);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.show__Less:hover{
+    opacity: 50%;
+}
+#poco_x_3 h4{ 
+    margin-left: 50%;
+    margin-top: -5%;
+}
+#poco_x_3 h2{
+    color: rgba(253, 132, 62, 0.973);
+}
+#poco_x_3{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#poco_x_3.active{
+   
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#realmi_6_pro{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;   
+}
+#realmi_6_pro.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#realmi_7_pro{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;      
+}
+#realmi_7_pro.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#Mi_10_lite{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#Mi_10_lite.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#redmi_note_8{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#redmi_note_8.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#redmi_note_9_s{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#redmi_note_9_s.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#realmi_note_9_pro{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#realmi_note_9_pro.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;  
+}
+#Redmi_9{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#Redmi_9.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;  
+}
+#Huawey_Watch{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;  
+}
+#Huawey_Watch.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;  
+}
+#Amazfit{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+#Amazfit.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;  
+}
+#redmagic_TWC{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+#redmagic_TWC.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;  
+}
+#Manos__libres{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+#Manos__libres.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+#Amazfit_gts_2{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+#Amazfit_gts_2.active{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s; 
+}
+#redmagic_TWC{
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.384);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s; 
+}
+#redmagic_TWC_fuction.action{
+    display: flex;
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s; 
+}
+
